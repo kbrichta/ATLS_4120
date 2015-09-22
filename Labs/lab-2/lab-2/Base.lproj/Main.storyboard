@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="lab_2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ebola-virus" translatesAutoresizingMaskIntoConstraints="NO" id="nNB-cY-wek">
+                                <rect key="frame" x="102" y="87" width="173" height="173"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="173" id="4uk-ho-UFm"/>
+                                    <constraint firstAttribute="width" constant="173" id="j6j-nt-nGn"/>
+                                </constraints>
+                            </imageView>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="20" minValue="10" maxValue="32" translatesAutoresizingMaskIntoConstraints="NO" id="r72-SY-vrm">
+                                <rect key="frame" x="131" y="315" width="146" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="142" id="2i1-OS-8YQ"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="142" id="RNJ-8h-8DB"/>
+                                    <constraint firstAttribute="height" constant="30" id="vow-eU-tnd"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="changeFontSize:" destination="vXZ-lx-hvc" eventType="valueChanged" id="xWj-41-e4w"/>
+                                </connections>
+                            </slider>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="cnq-hK-FTM">
+                                <rect key="frame" x="127" y="353" width="123" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="123" id="0fn-wV-669"/>
+                                    <constraint firstAttribute="height" constant="28" id="1eK-2a-ALo"/>
+                                    <constraint firstAttribute="width" constant="123" id="atg-hJ-XXT"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="1"/>
+                                    <segment title="2"/>
+                                    <segment title="3"/>
+                                </segments>
+                                <connections>
+                                    <action selector="pickVirus:" destination="vXZ-lx-hvc" eventType="valueChanged" id="AvC-vl-Hyl"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="16" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XWF-Us-Jy1">
+                                <rect key="frame" x="102" y="319" width="23" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="23" id="3Ql-bF-fuj"/>
+                                    <constraint firstAttribute="width" constant="23" id="4JF-Gd-3oK"/>
+                                    <constraint firstAttribute="height" constant="21" id="J69-sp-83Z"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Virus Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dcf-O3-4Do">
+                                <rect key="frame" x="102" y="268" width="173" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39" id="RKR-tZ-5ti"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="39" id="qum-j3-6AL"/>
+                                    <constraint firstAttribute="width" constant="173" id="v8J-t2-aXq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="XWF-Us-Jy1" secondAttribute="bottom" constant="260" id="0so-ZU-1fb"/>
+                            <constraint firstItem="Dcf-O3-4Do" firstAttribute="leading" secondItem="nNB-cY-wek" secondAttribute="leading" id="0te-Ka-q7O"/>
+                            <constraint firstItem="cnq-hK-FTM" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="111" id="2xh-xG-Vde"/>
+                            <constraint firstItem="cnq-hK-FTM" firstAttribute="centerX" secondItem="Dcf-O3-4Do" secondAttribute="centerX" id="3MI-jU-LML"/>
+                            <constraint firstItem="r72-SY-vrm" firstAttribute="top" secondItem="Dcf-O3-4Do" secondAttribute="bottom" constant="8" id="8Fi-qE-QOp"/>
+                            <constraint firstItem="r72-SY-vrm" firstAttribute="top" secondItem="Dcf-O3-4Do" secondAttribute="bottom" constant="8" id="8YY-ow-ngD"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="nNB-cY-wek" secondAttribute="trailing" constant="309" id="AYR-Ud-6lm"/>
+                            <constraint firstItem="r72-SY-vrm" firstAttribute="trailing" secondItem="Dcf-O3-4Do" secondAttribute="trailing" id="Dz5-2y-2AX"/>
+                            <constraint firstItem="Dcf-O3-4Do" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="86" id="Feh-N5-82e"/>
+                            <constraint firstItem="Dcf-O3-4Do" firstAttribute="top" secondItem="nNB-cY-wek" secondAttribute="bottom" constant="8" id="Hog-VS-14S"/>
+                            <constraint firstItem="r72-SY-vrm" firstAttribute="leading" secondItem="XWF-Us-Jy1" secondAttribute="trailing" constant="8" symbolic="YES" id="Hv0-Lq-xVz"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="cnq-hK-FTM" secondAttribute="trailing" constant="334" id="J2r-36-wcR"/>
+                            <constraint firstItem="nNB-cY-wek" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="86" id="KNb-En-vX7"/>
+                            <constraint firstItem="cnq-hK-FTM" firstAttribute="top" secondItem="r72-SY-vrm" secondAttribute="bottom" constant="8" id="KVP-1x-eo4"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Dcf-O3-4Do" secondAttribute="trailing" constant="309" id="Ok7-Jr-pq1"/>
+                            <constraint firstItem="Dcf-O3-4Do" firstAttribute="trailing" secondItem="nNB-cY-wek" secondAttribute="trailing" id="RNY-fj-0Qb"/>
+                            <constraint firstItem="nNB-cY-wek" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="67" id="VzR-Sz-cGu"/>
+                            <constraint firstItem="Dcf-O3-4Do" firstAttribute="top" secondItem="nNB-cY-wek" secondAttribute="bottom" constant="8" id="Yl1-YH-sRz"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="XWF-Us-Jy1" secondAttribute="bottom" constant="260" id="bap-aj-y2u"/>
+                            <constraint firstItem="r72-SY-vrm" firstAttribute="leading" secondItem="XWF-Us-Jy1" secondAttribute="trailing" constant="8" id="ckl-UV-FQk"/>
+                            <constraint firstItem="nNB-cY-wek" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="67" id="dHq-JY-rYy"/>
+                            <constraint firstItem="XWF-Us-Jy1" firstAttribute="top" secondItem="Dcf-O3-4Do" secondAttribute="bottom" constant="12" id="deY-ch-kkH"/>
+                            <constraint firstItem="XWF-Us-Jy1" firstAttribute="top" secondItem="Dcf-O3-4Do" secondAttribute="bottom" constant="12" id="fMZ-Wx-QqE"/>
+                            <constraint firstItem="cnq-hK-FTM" firstAttribute="top" secondItem="r72-SY-vrm" secondAttribute="bottom" constant="8" symbolic="YES" id="jcC-rZ-I9m"/>
+                            <constraint firstItem="nNB-cY-wek" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="86" id="ljd-tu-CEE"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="cnq-hK-FTM" secondAttribute="bottom" constant="219" id="nN4-xT-WTC"/>
+                            <constraint firstItem="cnq-hK-FTM" firstAttribute="top" secondItem="r72-SY-vrm" secondAttribute="bottom" constant="8" id="oS1-X7-ann"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="r72-SY-vrm" secondAttribute="trailing" constant="309" id="ohC-rj-u8e"/>
+                            <constraint firstItem="XWF-Us-Jy1" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="86" id="peb-uG-SVR"/>
+                            <constraint firstItem="Dcf-O3-4Do" firstAttribute="top" secondItem="nNB-cY-wek" secondAttribute="bottom" constant="8" id="rm7-bE-m39"/>
+                            <constraint firstItem="XWF-Us-Jy1" firstAttribute="leading" secondItem="Dcf-O3-4Do" secondAttribute="leading" id="t8Y-k1-1hu"/>
+                            <constraint firstItem="nNB-cY-wek" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="67" id="uAY-d3-Tyg"/>
+                            <constraint firstItem="r72-SY-vrm" firstAttribute="leading" secondItem="XWF-Us-Jy1" secondAttribute="trailing" constant="8" id="vfb-aM-Ljs"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="cnq-hK-FTM" secondAttribute="bottom" constant="219" id="vur-ik-CRL"/>
+                            <constraint firstItem="Dcf-O3-4Do" firstAttribute="top" secondItem="nNB-cY-wek" secondAttribute="bottom" constant="8" symbolic="YES" id="xXs-B0-Sd0"/>
+                            <constraint firstItem="cnq-hK-FTM" firstAttribute="top" secondItem="r72-SY-vrm" secondAttribute="bottom" constant="8" id="yIS-So-GcJ"/>
+                            <constraint firstItem="r72-SY-vrm" firstAttribute="top" secondItem="Dcf-O3-4Do" secondAttribute="bottom" constant="8" id="yVQ-UG-2Ys"/>
+                            <constraint firstItem="r72-SY-vrm" firstAttribute="top" secondItem="Dcf-O3-4Do" secondAttribute="bottom" constant="8" symbolic="YES" id="zia-Yb-x5E"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="fontSizeLabel" destination="XWF-Us-Jy1" id="DOy-qx-2jN"/>
+                        <outlet property="imageControl" destination="cnq-hK-FTM" id="VSq-Ei-H3t"/>
+                        <outlet property="virusImage" destination="nNB-cY-wek" id="rit-eR-scG"/>
+                        <outlet property="virusTitle" destination="Dcf-O3-4Do" id="uQV-3g-Lzn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ebola-virus" width="100" height="100"/>
+    </resources>
+</document>
