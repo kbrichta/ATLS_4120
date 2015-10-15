@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  Copyright (c) 2015 Kelly Brichta. All rights reserved." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="8ie-xW-0ye">
+                    <rect key="frame" x="20" y="439" width="441" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="H4i-BO-7y7"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="old-map" translatesAutoresizingMaskIntoConstraints="NO" id="TMy-uA-maZ">
+                    <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon" translatesAutoresizingMaskIntoConstraints="NO" id="2zY-Th-E2k">
+                    <rect key="frame" x="190" y="203" width="101" height="97"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="101" id="U2a-Qo-99o"/>
+                        <constraint firstAttribute="height" constant="97" id="rnj-op-NgE"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You Are...Waiting" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8od-fU-Vov">
+                    <rect key="frame" x="101" y="141" width="278" height="54"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="278" id="Pqz-gC-1Hl"/>
+                        <constraint firstAttribute="height" constant="54" id="g4s-mb-kTP"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="TMy-uA-maZ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="DTG-Bl-zxs"/>
+                <constraint firstAttribute="bottom" secondItem="8ie-xW-0ye" secondAttribute="bottom" constant="20" id="F50-TT-xKL"/>
+                <constraint firstItem="TMy-uA-maZ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Mk7-vR-YBu"/>
+                <constraint firstItem="8ie-xW-0ye" firstAttribute="centerX" secondItem="2zY-Th-E2k" secondAttribute="centerX" id="QCJ-eF-goM"/>
+                <constraint firstItem="2zY-Th-E2k" firstAttribute="top" secondItem="8od-fU-Vov" secondAttribute="bottom" constant="8" symbolic="YES" id="Rfc-tg-UAe"/>
+                <constraint firstAttribute="bottom" secondItem="TMy-uA-maZ" secondAttribute="bottom" id="SBe-2L-4tk"/>
+                <constraint firstAttribute="trailing" secondItem="TMy-uA-maZ" secondAttribute="trailing" id="SoH-h9-aW4"/>
+                <constraint firstItem="TMy-uA-maZ" firstAttribute="centerX" secondItem="2zY-Th-E2k" secondAttribute="centerX" id="VVh-9n-khm"/>
+                <constraint firstItem="8od-fU-Vov" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="141" id="Wv5-VD-k6E"/>
+                <constraint firstItem="8ie-xW-0ye" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="e8I-T1-lMe"/>
+                <constraint firstItem="8od-fU-Vov" firstAttribute="centerX" secondItem="2zY-Th-E2k" secondAttribute="centerX" id="r7V-do-qtu"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="548" y="455"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon" width="85" height="85"/>
+        <image name="old-map" width="433" height="304"/>
+    </resources>
+</document>
