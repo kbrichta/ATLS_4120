@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Brichta_final</string>
+
+    <string name="button">Pizza me</string>
+    <string name="button2">Find Pizza</string>
+
+    <string name="title">Build My Pizza</string>
+
+    <string name="favoritePizza"></string>
+
+    <string name="suggested_pizzaPlace">Here is your suggested pizza place.</string>
+
+</resources>
