@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">FindStmEducator</string>
+
+    <string name="title">Find a certified Fertility Awareness Educator...</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="name">Your name</string>
+
+    //RADIO BUTTONS
+    <string name="radioButtonsLabel">Select the method you learn best:</string>
+    <string name="learning1_radio">one-on-one (in person)</string>
+    <string name="learning2_radio">one-on-one (online)</string>
+    <string name="learning3_radio">in small groups</string>
+    <string name="learning4_radio">by reading</string>
+
+    <string-array name="methodUse">
+        <item>to achieve pregnancy</item>
+        <item>to avoid pregnancy</item>
+        <item>for health</item>
+        <item>for an introduction</item>
+    </string-array>
+
+    <string name="toggleButtonReligion">Through what lens do you want to learn STM?</string>
+    <string name="endString"></string>
+
+    <string name="title_activity_receive_educator">ReceiveEducatorActivity</string>
+
+    <string name="useDescription">Chose how you intend to primarily use STM:</string>
+
+    <!--<string name="recommended">Here are two recommended educators:</string>-->
+
+</resources>

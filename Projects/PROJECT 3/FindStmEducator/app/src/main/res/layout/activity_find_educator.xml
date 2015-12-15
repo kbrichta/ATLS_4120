@@ -1,0 +1,226 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".FindEducator">
+
+    <TextView
+        android:text="@string/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+
+        android:id="@+id/textView"
+        />
+
+//START Linear 1
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+
+        android:id="@+id/linear1"
+        android:layout_below="@id/textView"
+        >
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="150dp"
+
+        android:hint="@string/name"
+
+        android:id="@+id/editTextName"
+        />
+
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/toggleButtonSex"
+
+            android:textOn="male"
+            android:textOff="female"
+            />
+    </LinearLayout>
+    //END Linear 1
+
+    //START Linear 3
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/linear3"
+        android:layout_below="@id/linear1"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/useDescription"
+            android:layout_weight="1"
+            android:id="@+id/textView5"/>
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+
+            android:id="@+id/spinnerUse"
+
+            android:entries="@array/methodUse"
+            >
+        </Spinner>
+    </LinearLayout>
+    //END Linear 3
+
+    //START Linear 4
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        android:id="@+id/linear4"
+        android:layout_below="@id/linear3">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:text="@string/radioButtonsLabel"
+            android:layout_weight="1"
+            android:id="@+id/textView2"/>
+    </LinearLayout>
+    //END Linear 4
+
+    //START Linear 5
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/linear5"
+        android:layout_below="@id/linear4">
+
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/radioButtonsLearning">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/learning1_radio"
+            android:id="@+id/radioButton1"
+            android:layout_weight="1"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/learning2_radio"
+            android:id="@+id/radioButton2"
+            android:layout_weight="1"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/learning3_radio"
+            android:id="@+id/radioButton3"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/learning4_radio"
+            android:id="@+id/radioButton4"
+            android:layout_weight="1"/>
+    </RadioGroup>
+    </LinearLayout>
+    //END Linear 5
+
+    //START Linear 6
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/linear6"
+        android:layout_below="@id/linear5"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:text="@string/toggleButtonReligion"
+            android:layout_weight="1"
+            android:id="@+id/textView3"/>
+
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/toggleButtonReligion"
+
+            android:textOn="Catholic"
+            android:textOff="secular"
+            />
+    </LinearLayout>
+    //END Linear 6
+
+    //START Linear 7
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+
+        android:id="@+id/linear7"
+        android:layout_below="@+id/linear6"
+        >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+
+            android:id="@+id/buttonFind"
+            android:text="Info"
+            android:onClick="findinfo"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+
+            android:id="@+id/buttonGo"
+            android:text="My suggestion"
+            android:onClick="findCertifiedEducator"
+            />
+    </LinearLayout>
+    //END Linear 7
+
+    //START Linear 8
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/linear8"
+        android:layout_below="@+id/linear7"
+        >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+
+        android:text="@string/endString"
+        android:id="@+id/textView4"
+        />
+    </LinearLayout>
+    //END Linear 8
+
+
+</RelativeLayout>
